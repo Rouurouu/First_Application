@@ -9,7 +9,8 @@ class AppController extends Controller
 {
     public function welcome ()
     {
-        $todos = todo::all();
-        return view('welcome', ['todos' => $todos]);
+       // $todos = todo::all();
+       // return view('welcome', ['todos' => $todos]);
+       return view('welcome');
     }
 }
