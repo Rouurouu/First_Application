@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('body');
             $table->string('image')->nullable();
             //$table->unsignedBigInteger('user id');
-            $table->foreignId('user id');
+            $table->foreignId('user_id');
             //$table->bigInteger('category_id')->unsigned();
             $table->foreignId('category_id');
             $table->timestamps();
