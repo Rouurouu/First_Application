@@ -39,7 +39,10 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $post = Post::with('category','user')->findOrFail($id);
+        //return $post;
+        return view('posts.show',compact('post'));
+
     }
 
     /**

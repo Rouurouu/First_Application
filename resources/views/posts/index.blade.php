@@ -30,7 +30,9 @@
       </div>
     </div>
   </nav>
+  @
     <div class="container py-4">
+      <h2>posts list </h2>
         <table class="table">
             <thead>
                 <tr>
@@ -49,7 +51,7 @@
                     <td>{{ substr($post->body, 0, 50).'...' }}</td>
                     <td>{{$post->category->name}}</td>
                     <td>
-                        <button class="btn btn-outline-info">Show</button>
+                        <a href="/posts/{{ $post->id}}" class="btn btn-outline-info">Show</a>
                         <button class="btn btn-outline-warning">Edit</button>
                         <button class="btn btn-outline-danger">Delete</button>   
                     </td>
